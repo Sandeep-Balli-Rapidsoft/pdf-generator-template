@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Product Invoice</title>
+</head>
+<body>
+    <h1>Product Invoice</h1>
+    <table>
+        <tr>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Order ID</th>
+            <th>Order Date</th>
+        </tr>
+        <tr>
+            <td th:text="${product.productName}"></td>
+            <td th:text="${product.productPrice}"></td>
+            <td th:text="${product.orderId}"></td>
+            <td th:text="${product.orderDate}"></td>
+        </tr>
+    </table>
+</body>
+</html>
